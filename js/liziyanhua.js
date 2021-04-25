@@ -227,7 +227,7 @@ const addRocket = function() {
 	
 	const position = new Vector2(Math.random() * canvas.width, canvas.height);
 	//烟花的高度
-	const thrust = window.innerHeight * .45;
+	const thrust = window.innerHeight * .55;
 	const angle = Math.PI / -2 + (Math.random() - .6) * Math.PI / 8;
 	const velocity = new Vector2(Math.cos(angle) * thrust, Math.sin(angle) * thrust);
 	const lifetime = 10;

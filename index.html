@@ -25,7 +25,7 @@
     audio{
         position: fixed;
         bottom: 1%;
-        left: 84%;
+        left: 85%;
         opacity: 0.2;
         border: none;
         outline: none;
@@ -69,18 +69,21 @@
 
 
 
-<script type="text/javascript" src="./js/liziyanhua.js" style="z-index: 999"></script>
+<script type="text/javascript" src="./js/liziyanhua.js" style="z-index: 999999"></script>
 	
 
 
 <!-- 音乐播放器 -->
-<audio controls height="500" width="1000">
+<audio id="bgAudio" controls height="200" width="1000" loop="loop">
     <source src="changanguli.mp3">
     
     <!-- <embed>标签定义外部（非 HTML）内容的容器。（这是一个 HTML5 标签，在 HTML4 中是非法的，但是所有浏览器中都有效）。 -->
-    <embed height="200" width="600" src="changanguli.mp3">
+    <embed height="20" width="100" src="changanguli.mp3">
 </audio>
-	
+
+<script type="text/javascript">
+    document.getElementById('bgAudio').volume = 0.5;
+</script>
 
 
 </body>
